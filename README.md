@@ -79,4 +79,3 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ---
 
 [Документация Next.js](https://nextjs.org/docs)  
-[Deploy on Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
