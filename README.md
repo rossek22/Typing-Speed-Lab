@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Typing Speed Lab
 
-## Getting Started
+## О проекте (RU)
 
-First, run the development server:
+**Typing Speed Lab** — это веб-приложение для тренировки скорости печати на разных языках. Сервис генерирует предложения с помощью искусственного интеллекта (OpenRouter API), а пользователь должен напечатать их максимально быстро и точно. В конце теста отображаются статистика: WPM (слов в минуту), точность и количество ошибок.
 
-```bash
+### Технологии
+
+- [Next.js](https://nextjs.org/) (React, TypeScript)
+- OpenRouter API (AI генерация текста)
+- Framer Motion (анимации)
+- Tailwind CSS (стили)
+
+### Как работает
+
+1. Выбираете язык и лимит слов.
+2. Нажимаете "Сгенерировать" — ИИ создает предложение.
+3. Начинаете печатать — таймер отсчитывает время.
+4. После окончания теста видите свою статистику.
+
+### Запуск проекта
+
+```sh
+git clone https://github.com/your-username/typing-speed-lab.git
+cd typing-speed
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Создайте файл `.env` и добавьте ваш ключ OpenRouter API:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+OPENROUTER_API_KEY=ваш_ключ
+OPENROUTER_REFERER=http://localhost:3000
+OPENROUTER_SITE_TITLE=Typing Speed Lab
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## About the Project (EN)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Typing Speed Lab** is a web app for practicing typing speed in different languages. The service generates sentences using AI (OpenRouter API), and the user must type them as quickly and accurately as possible. After the test, you see your stats: WPM (words per minute), accuracy, and error count.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Technologies
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/) (React, TypeScript)
+- OpenRouter API (AI text generation)
+- Framer Motion (animations)
+- Tailwind CSS (styles)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### How it works
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Choose a language and word limit.
+2. Click "Generate" — AI creates a sentence.
+3. Start typing — the timer counts down.
+4. After the test, view your statistics.
+
+### Getting Started
+
+```sh
+git clone https://github.com/your-username/typing-speed-lab.git
+cd typing-speed
+npm install
+npm run dev
+```
+
+Create a `.env` file and add your OpenRouter API key:
+
+```
+OPENROUTER_API_KEY=your_key
+OPENROUTER_REFERER=http://localhost:3000
+OPENROUTER_SITE_TITLE=Typing Speed Lab
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+[Документация Next.js](https://nextjs.org/docs)  
+[Deploy on Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
